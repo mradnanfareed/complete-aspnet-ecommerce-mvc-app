@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace eTickets.Models
 {
@@ -10,5 +11,11 @@ namespace eTickets.Models
         public string Logo { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
+
+        //Relationship movies to Cinemas (one to many)
+        public List<Movie> Movies { get; set; }
+
+
+      
     }
 }
